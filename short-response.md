@@ -40,13 +40,36 @@ Write your responses to the questions below directly in this document. When you 
     var a = 1;
     ```
 
+5. Why does this code throw an error? 
+    ```javascript
+    const isSunny = true;
+
+    if (isSunny) {
+      let advice = 'Wear your sunshades!';
+    }
+
+    console.log(advice);
+    ```
+
+
+6. So... why does this code work as intended?
+    ```javascript
+    const isRainy = true;
+
+    if (isRainy) {
+      var advice = 'Pack your umbrella.';
+    }
+
+    console.log(advice);
+    ```
+    
 ### Arrays
 
-1. What does it mean for arrays to be _passed by reference_ in JavaScript? Be sure to include a code snippet to illustrate your response.
+7. What does it mean for arrays to be _passed by reference_ in JavaScript? Be sure to include a code snippet to illustrate your response.
 
 
-2. What does it mean to _destructure_ a JavaScript array? How do we use the _spread operator_ for destructuring. Be sure to include a code snippet to illustrate your response.
+8. What does it mean to _destructure_ a JavaScript array? How do we use the _spread operator_ for destructuring. Be sure to include a code snippet to illustrate your response.
 
 
-3. What is the purpose of _rest parameters_? How do we use them? Use a code snippet to illustrate your response. Lastly, explain how do they differ from the `arguments` object?
+9. What is the purpose of _rest parameters_? How do we use them? Use a code snippet to illustrate your response. Lastly, explain how do they differ from the `arguments` object?
 
