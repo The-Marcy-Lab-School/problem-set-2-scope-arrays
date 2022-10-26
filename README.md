@@ -1,4 +1,4 @@
-# Unit 2 Lesson 5 Problem Set
+# Unit 2 Problem Set - Scope and Arrays
 ## JavaScript Array Fundamentals
 
 ### Directions
