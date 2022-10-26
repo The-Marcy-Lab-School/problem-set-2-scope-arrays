@@ -1,4 +1,4 @@
-# Problem Set 2.5 - JavaScript Array Fundamentals
+# Problem Set - Scope and Arrays
 
 ## Instructions
 
@@ -40,7 +40,7 @@ For all the exercises below, you **may not** use any of the built-in [`Array.pro
     ```
 
 4. **Recreate `Array.prototype.reverse`**: Create a function named `reverseArray` that returns the contents of the array it receives as an argument, but with the values in reversed order. This should be a _non-mutating_ method. Meaning the original array should not be changed.
-    > **Note:** `Array.prototype.reverse` _is_ actually mutating but to make this particular problem easier, we will allow you to reverse a _copy_ of the array. For extra credit, try to reverse the array "in place."
+    > **Note:** `Array.prototype.reverse` _is_ actually mutating but to make this particular problem easier, we will allow you to reverse a _copy_ of the array. As a challenge, try to reverse the array "in place."
 
 5. **Recreate `Array.prototype.indexOf`**: Create a function called `indexOf` that finds the first instance of a value in an array and returns the index position of the value, or -1 if the value is not in the array. The function should take two arguments: the value to search for, and the array to search. **Hint:** _Use the break keyword to exit the loop immediately when you find the first instance of the value._
 
@@ -98,63 +98,3 @@ For all the exercises below, you **may not** use any of the built-in [`Array.pro
     slice(languages); // ['python', 'ruby', 'javascript', 'java', 'c++']
     languages; // ['python', 'ruby', 'javascript', 'java', 'c++']
     ```
-
-11. **Recreate `Array.prototype.splice`**: Write a function named `splice` that accepts three arguments: an Array, a start index, and the number of values to remove. The function should remove values from the original Array, starting with the first index and removing the specified number of values. The function should return the removed values in a new Array.
-
-
-    Ex:
-    ```javascript
-    const languages = ['python', 'ruby', 'javascript', 'java', 'c++'];
-    splice(languages, 0, 2); // ['python', 'ruby'];
-    languages; // ['javascript', 'java', 'c++']
-    ```
-12. **Improve `Array.prototype.splice` implementation**: The `Array.prototype.splice` method takes additional arguments that are injected into the original array, after the selected elements have been removed. Rewrite your `splice` method to include this functionality. Your new function, `spliceForReal` should take an array, a starting index, a delete count, and then an arbitrary number of additional items to inject into the array.
-    **Hint:** You will have to use _rest parameters_ to pull this off.
-
-    Ex:
-    ```javascript
-    const months = ['Jan', 'February', 'March', 'April', 'May', 'June'];
-    spliceForReal(months, 1, 2, 'Febrero', 'Marzo'); // ['February', 'March']
-    months; // ['Jan', 'Febrero', 'Marzo', 'April', 'May', 'June']
-
-    const days = ['sun', 'thur', 'fri', 'sat'];
-    spliceForReal(days, 1, 0, 'mon', 'tues', 'wed'); // []
-    days; // ['sun', 'mon', 'tues', 'wed', 'thur', 'fri', 'sat'];
-    ```
-
-13. **Recreate `Array.prototype.concat`**: Write a function named `concat` that accepts two Array arguments. The function should return a new Array that contains the values from each of the original Arrays.
-
-    Ex:
-    ```javascript
-    concat(['a', 'b', 'c'], ['d', 'e']); // ['a', 'b', 'c', 'd', 'e']
-    ```
-
-14. **Shallow Comparison**: Write a function named `shallowCompare` that takes two arrays as arguments. The function should return true if the arrays contain the same values, or false if they do not.
-    Ex:
-    ```javascript
-    shallowCompare([1], [1]);                               // true
-    shallowCompare([1], [2]);                               // false
-    shallowCompare([1, 2], [1, 2, 3]);                      // false
-    shallowCompare([1, 'hi', true], [1, 'hi', true]);       // true
-    shallowCompare([1, 'hi', true], [1, 'hi', false]);      // false
-    shallowCompare([1, 'hi', true], [1, 'hello', true]);    // false
-    shallowCompare([1, 'hi', true], [2, 'hi', true]);       // false
-    ```
-
-    **Note**: When comparing nested arrays, you do _not_ have to compare the inner values. You can use strict equality to compare _references_. In other words, when performing a _shallow_ comparison of arrays, when we encounter an object/array, we only have to check if they are the same object; we don't have to check the equality of inner values.
-    ```javascript
-    shallowCompare([1, 2, 3, [3.5, 3.75], 4], [1, 2, 3, [3.5, 3.75], 4]); // false
-    const decimals = [3.5, 3.75];
-    shallowCompare([1, 2, 3, decimals, 4], [1, 2, 3, decimals, 4]); // true
-    ```
-
-15. **Deep Compare**: Write a function names `deepCompare` that takes, as arguments, two arrays. The function should return true if the arrays contain the same values. If the arguments contain nested arrays, `deepCompare` should compare the inner elements of the nested arrays.
-
-    Ex:
-    ```javascript
-    deepCompare([true, 'devonte', 10], [true, 'devonte', 10]); // true
-    deepCompare([true, 'devonte', 10], [true, 'devonte', 11]); // false
-    deepCompare([1, 2, 3, [3.5, 3.75], 4], [1, 2, 3, [3.5, 3.75], 4]); // true
-    ```
-
-    **Hint**: You can use the `shallowCompare` function that created above.
