@@ -3,7 +3,7 @@
 ## Short Response Section
 
 **Directions:**
-Write your responses to the questions below directly in this document. When you commit and push your changes, you will be able to see your rendered markdown on GitHub.
+Write your responses directly below in this document without removing the questions. Your answers must be properly formatted. You should preview this markdown file before submitting. When you commit and push your changes, you will also be able to see your rendered markdown on GitHub.
 
 ### Scope
 
