@@ -39,7 +39,7 @@ For all the exercises below, you **may not** use any of the built-in [`Array.pro
     letters; // ['a', 'b', 'c'];
     ```
 
-4. **Recreate `Array.prototype.reverse`**: Create a function named `reverseArray` that returns the contents of the array it receives as an argument, but with the values in reversed order. This should be a _non-mutating_ method. Meaning the original array should not be changed.
+4. **Recreate `Array.prototype.reverse`**: Create a function named `reverseArray` that accepts one argument: an Array. The function should return the contents of the array, but with the values in reversed order. This should be a _non-mutating_ function (the original array should not be changed).
     > **Note:** `Array.prototype.reverse` _is_ actually mutating but to make this particular problem easier, we will allow you to reverse a _copy_ of the array. As a challenge, try to reverse the array "in place."
 
 5. **Recreate `Array.prototype.indexOf`**: Create a function called `indexOf` that finds the first instance of a value in an array and returns the index position of the value, or -1 if the value is not in the array. The function should take two arguments: the value to search for, and the array to search. **Hint:** _Use the break keyword to exit the loop immediately when you find the first instance of the value._
