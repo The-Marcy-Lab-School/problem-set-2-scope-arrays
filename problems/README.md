@@ -42,7 +42,9 @@ For all the exercises below, you **may not** use any of the built-in [`Array.pro
 4. **Recreate `Array.prototype.reverse`**: Create a function named `reverseArray` that accepts one argument: an Array. The function should return the contents of the array, but with the values in reversed order. This should be a _non-mutating_ function (the original array should not be changed).
     > **Note:** `Array.prototype.reverse` _is_ actually mutating but to make this particular problem easier, we will allow you to reverse a _copy_ of the array. As a challenge, try to reverse the array "in place."
 
-5. **Recreate `Array.prototype.indexOf`**: Create a function called `indexOf` that finds the first instance of a value in an array and returns the index position of the value, or -1 if the value is not in the array. The function should take two arguments: the value to search for, and the array to search. **Hint:** _Use the break keyword to exit the loop immediately when you find the first instance of the value._
+5. **Recreate `Array.prototype.indexOf`**: Create a function called `indexOf` that accepts two arguments: an Array and a value to search for. It should find the first instance of a value in an array and return the index position of the value, or `-1` if the value is not in the array. 
+
+    > **Hint:** _You can use the `break` keyword to exit the loop immediately when you find the first instance of the value. But this isn't the only way to solve the problem!_
 
     Ex:
     ```javascript
@@ -51,7 +53,9 @@ For all the exercises below, you **may not** use any of the built-in [`Array.pro
     indexOf(friends, 'steph'); // 2
     indexOf(friends, 'reuben'); // -1
     ```
-6. **Recreate `Array.prototype.join`**: Create a function called `join` that takes two arguments, an array and a _separator_. This function should return a string with all the elements of the array coerced to strings and concatenated together, separated by the _separator_. If no separator is given, the default separator should be a comma (`,`). **Hint**: You will have to use a default argument.
+6. **Recreate `Array.prototype.join`**: Create a function called `join` that takes two arguments, an array and a _separator_. This function should return a string with all the elements of the array coerced to strings and concatenated together, separated by the _separator_. If no separator is given, the default separator should be a comma (`,`). 
+
+    > **Hint**: You will have to use a default argument.
 
     Ex:
     ```javascript
