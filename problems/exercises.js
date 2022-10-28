@@ -48,31 +48,6 @@ const slice = function() {
 
 };
 
-// Question 11
-const splice = function() {
-
-};
-
-// Question 12
-const spliceForReal = function() {
-
-};
-
-// Question 13
-const concat = function() {
-
-};
-
-// Question 14
-const shallowCompare = function() {
-
-};
-
-// Question 15
-const deepCompare = function() {
-
-};
-
 // Write all your code ABOVE this line
 module.exports = {
   shoutout,
@@ -85,9 +60,4 @@ module.exports = {
   shift,
   lastIndexOf,
   slice,
-  splice,
-  spliceForReal,
-  concat,
-  shallowCompare,
-  deepCompare,
 };
