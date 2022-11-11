@@ -25,7 +25,7 @@ test('Question 2: push', () => {
   const testArr2 = [10, 20, 30, 40];
   newLength = exercises.push(testArr2, 50);
   expect(newLength).toBe(5);
-  expect(testArr).toEqual([10, 20, 30, 40, 50]);
+  expect(testArr2).toEqual([10, 20, 30, 40, 50]);
 });
 
 // Question 3
