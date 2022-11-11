@@ -49,6 +49,10 @@ const slice = function() {
 };
 
 // Write all your code ABOVE this line
+// These functions are being "exported" and will be "imported"
+// into exercises.test.js into an object called `exercises`.
+// You will see each of these functions being called in the 
+// tests like: exercises.functionName.
 module.exports = {
   shoutout,
   reverseArray,
